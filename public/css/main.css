@@ -1,0 +1,54 @@
+/* hax */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+
+body {
+  font-family: helvetica,sans-serif;
+  font-size: 12px;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.4;
+  text-align: center;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  border: none;
+}
+
+a, a:visited {
+	color: #a9014b;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#container {
+  width: 250px;
+  margin: auto;
+  text-align: left;
+}
+
+li {
+  list-style-type: none;
+  margin: 2px 0px;
+  padding: 2px 0px;
+  border-bottom: 1px solid #ddd;
+  
+}
+.action {
+  float: right;
+}

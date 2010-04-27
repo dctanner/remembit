@@ -1,0 +1,16 @@
+<h1>Remembit</h1>
+
+<ul>
+<% @items.each do |i| %>
+  <li class="clearfix"><form method="post" action="/<%= i.id %>"><input type="hidden" name="_method" value="delete" /><input type="submit" value="x" class="action" /></p></form><span><%= i.body %></span> </li>
+<% end %>
+</ul>
+
+<div id="new_item">
+  <form method="post"> 
+    <p>
+      <input id="body" name="body" size="35" type="text" />
+      <input type="submit" value="Add" class="button" />
+    </p>
+  </form>
+</div>
